@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OwL-kM-Iyi">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="avo-8y-KpP">
+            <objects>
+                <viewController id="OwL-kM-Iyi" customClass="ViewController" customModule="PlayLocalVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xVx-RX-9RZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="P25-mV-Bin">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="291" id="OLU-lo-TLp" customClass="VideoCell" customModule="PlayLocalVideo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="291"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OLU-lo-TLp" id="qPM-Mv-Kko">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jYZ-Dm-ngH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="291"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="or2-9B-HVg">
+                                                    <rect key="frame" x="186" y="237" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFd-zK-NrQ">
+                                                    <rect key="frame" x="189.5" y="266" width="35.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="play.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="u98-fj-AVN">
+                                                    <rect key="frame" x="182" y="121" width="50" height="49"/>
+                                                    <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="50" id="0H3-Yx-jOW"/>
+                                                        <constraint firstAttribute="width" constant="50" id="RXY-XR-j8U"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="u98-fj-AVN" firstAttribute="centerX" secondItem="qPM-Mv-Kko" secondAttribute="centerX" id="0qR-ad-bhz"/>
+                                                <constraint firstItem="or2-9B-HVg" firstAttribute="centerX" secondItem="qPM-Mv-Kko" secondAttribute="centerX" id="19V-LI-KDf"/>
+                                                <constraint firstAttribute="bottom" secondItem="jYZ-Dm-ngH" secondAttribute="bottom" id="5Mo-86-TGn"/>
+                                                <constraint firstItem="FFd-zK-NrQ" firstAttribute="centerX" secondItem="qPM-Mv-Kko" secondAttribute="centerX" id="AhK-Ti-EiH"/>
+                                                <constraint firstAttribute="bottom" secondItem="FFd-zK-NrQ" secondAttribute="bottom" constant="8" id="IQI-gs-HnI"/>
+                                                <constraint firstItem="FFd-zK-NrQ" firstAttribute="top" secondItem="or2-9B-HVg" secondAttribute="bottom" constant="8" id="S0m-TD-R2d"/>
+                                                <constraint firstAttribute="trailing" secondItem="jYZ-Dm-ngH" secondAttribute="trailing" id="aFC-sY-XM0"/>
+                                                <constraint firstItem="jYZ-Dm-ngH" firstAttribute="top" secondItem="qPM-Mv-Kko" secondAttribute="top" id="e7W-pH-HcR"/>
+                                                <constraint firstItem="u98-fj-AVN" firstAttribute="centerY" secondItem="qPM-Mv-Kko" secondAttribute="centerY" id="vA2-l2-dn5"/>
+                                                <constraint firstItem="jYZ-Dm-ngH" firstAttribute="leading" secondItem="qPM-Mv-Kko" secondAttribute="leading" id="vc8-m1-9Cc"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoScreenshot" destination="jYZ-Dm-ngH" id="aKh-Qk-Jfu"/>
+                                            <outlet property="videoSourceLab" destination="FFd-zK-NrQ" id="EZM-N6-2YP"/>
+                                            <outlet property="videoTitleLab" destination="or2-9B-HVg" id="R0K-nX-cUP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="P25-mV-Bin" secondAttribute="bottom" id="6Qt-6q-wsT"/>
+                            <constraint firstAttribute="trailing" secondItem="P25-mV-Bin" secondAttribute="trailing" id="Z26-X6-7dt"/>
+                            <constraint firstItem="P25-mV-Bin" firstAttribute="leading" secondItem="xVx-RX-9RZ" secondAttribute="leading" id="bRb-JA-OUG"/>
+                            <constraint firstItem="P25-mV-Bin" firstAttribute="top" secondItem="xVx-RX-9RZ" secondAttribute="top" id="rHd-1Q-NNo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cZm-9V-4bU"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoTableView" destination="P25-mV-Bin" id="WeT-p8-aA2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xRO-6I-vWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="play.circle" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
